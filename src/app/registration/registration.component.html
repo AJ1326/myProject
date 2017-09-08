@@ -1,0 +1,52 @@
+<div class="box-inner">
+  <div class="form form-register">
+    <form name="sign_up_form" novalidate="novalidate">
+      <div class="form-head">
+        <h4>Welcome to DocDoc</h4>
+      </div>
+      <div class="form-body">
+        <div class="form-row">
+          <div class="form-controls"><input auto-fillable-field="auto-fillable-field" class="field" id="field-reg-given-name" name="uFirstName" placeholder="Given Name" required="required" type="text" />
+            <div class="notice field-notice cannot-empty">
+              <div class="message">You can't leave this empty</div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-controls"><input auto-fillable-field="auto-fillable-field" class="field" id="field-reg-family-name" name="uLastName" placeholder="Family Name" required="required" type="text" />
+            <div class="notice field-notice cannot-empty">
+              <div class="message">You can't leave this empty</div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-controls"><input auto-fillable-field="auto-fillable-field" class="field" id="field-reg-email" name="uEmail" placeholder="Email Address" required="required" type="email" />
+            <div class="notice field-notice cannot-empty">
+              <div class="message">You can't leave this empty</div>
+            </div>
+            <div class="notice field-notice incorrect-email">
+              <div class="message">Incorrect email</div>
+            </div>
+            <div class="notice field-notice email-taken">
+              <div class="message">Email already taken</div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-controls"><input class="field" id="field-reg-password" name="uPassword" placeholder="Password (min. 6 characters)" required="required" type="password" />
+            <div class="notice field-notice cannot-empty">
+              <div class="message">You can't leave this empty</div>
+            </div>
+            <div class="notice field-notice incorrect-password">
+              <div class="message">Password must be 6 characters or more</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form-actions">
+        <p>By signing up you agree to our terms</p><button class="btn btn-blue" disabled="true" id="register-submit" type="submit">Sign Up</button>
+        <p>Already have an account?<a class="link-login box-show" href="#login">Login</a></p>
+      </div>
+    </form>
+  </div>
+</div>

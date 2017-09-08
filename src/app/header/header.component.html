@@ -1,0 +1,143 @@
+<header class="header" ng-controller="AuthController" ng-init="init()">
+  <div class="header-top">
+    <div class="shell">
+      <div class="header-inner"><a class="logo" href="/"><img alt="logo" data-src="../assets/images/logo-header2x.png" height="26" src="../assets/images/logo-header2x.png" width="138" /></a>
+        <p class="help">Need help finding care abroad?<span class="hide-desktop">Call us at: </span><a href="tel:+6566975300" rel="nofollow"><span class="tracking-phone-num tel medtour">+65 6697 5300</span></a></p><button class="btn-nav"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+        <nav class="nav-utilities">
+          <ul>
+            <li class="has-subnav"><a href="javascript:void(0)">English</a>
+              <div class="nav-dropdown nav-dropdown-lang">
+                <ul>
+                  <li><a href="javascript:void(0)">English</a></li>
+                  <li class="change-language" data-url="/medtour/change_language?language=Bahasa+%28Indonesia%29"><a href="/id/search" hreflang="id">Bahasa (Indonesia)</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a class="box-show" (click)="openLogin()">Login</a></li>
+          </ul>
+        </nav>
+
+       <div *ngIf="openLog">
+         <app-login></app-login>
+       </div>
+
+
+        <div class="box-forgot menu-box">
+          <app-forget-password></app-forget-password>
+        </div>
+
+        <div class="box-thanks menu-box">
+          <div class="box-inner">
+            <h2>Thank You<span>for signing up!</span></h2>
+          </div>
+        </div>
+
+
+        <div class="box-register menu-box">
+          <app-registration></app-registration>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <div class="header-bottom hide-desktop">
+    <div class="shell">
+      <div class="header-inner">
+        <nav class="nav">
+          <ul>
+            <li class="nav-item-consider"><a href="javascript:void(0)">Consider</a>
+              <div class="nav-dropdown-mega">
+                <div class="shell">
+                  <div class="nav-dropdown-inner">
+                    <div class="row">
+                      <div class="col col-1of2">
+                        <ul>
+                          <li><a href="/consider/what-is-medical-tourism">What is medical tourism</a></li>
+                          <li><a href="/consider/what-are-the-risks">What are the risks</a></li>
+                          <li><a href="/consider/why-docdoc">Why DocDoc</a></li>
+                        </ul>
+                      </div>
+                      <div class="col col-1of2">
+                        <blockquote class="header-quote"><i class="ico-quote-small"></i>
+                          <p>"DocDoc helped me find the right neurologist for my mother. The comprehensive information <br> available online was helpful but the big difference for me was the free conversation I had <br> with the lovely DocDoc doctor who ensured I found the right doctor for my situation. <br> Thanks DocDoc! Well done!"
+                          </p><cite>Jean Fung</cite></blockquote>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item-discover"><a href="javascript:void(0)">Discover</a>
+              <div class="nav-dropdown-mega">
+                <div class="shell">
+                  <div class="nav-dropdown-inner">
+                    <div class="row">
+                      <div class="col col-1of2">
+                        <ul>
+                          <li><a href="/discover/our-process">Our process</a></li>
+                          <li><a href="/info/directory">Learn about a condition or specialty</a></li>
+                        </ul>
+                      </div>
+                      <div class="col col-1of2">
+                        <blockquote class="header-quote"><i class="ico-quote-small"></i>
+                          <p>"I was amazed at how much information the team at DocDoc had collected at their disposal <br> to help me find the right doctor for my family. They saved me hundreds of hours of time and also ensured I got the best price possible for my selected doctor."
+                          </p><cite>Sheila Nuranata</cite></blockquote>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item-engage"><a href="javascript:void(0)">Engage</a>
+              <div class="nav-dropdown-mega">
+                <div class="shell">
+                  <div class="nav-dropdown-inner">
+                    <div class="row">
+                      <div class="col col-1of2">
+                        <blockquote class="header-quote"><i class="ico-quote-small"></i>
+                          <p>"DocDoc knows who to go to for particular procedure in the region. <br> More than this, they took care of me like I was part of their family."
+                          </p><cite>So Young Kang</cite></blockquote>
+                      </div>
+                      <div class="col col-1of2">
+                        <ul>
+                          <li><a href="/engage/search-for-provider">Search for provider</a></li>
+                          <li><a href="/about/contact-us">Talk with a medical tourism professional now</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item-about"><a href="javascript:void(0)">About DocDoc</a>
+              <div class="nav-dropdown-mega">
+                <div class="shell">
+                  <div class="nav-dropdown-inner">
+                    <div class="row">
+                      <div class="col col-1of2">
+                        <blockquote class="header-quote"><i class="ico-quote-small"></i>
+                          <p>"I trust DocDoc. The people who work there care. They were a powerful <br> advocate for me in finding the right doctor."
+                          </p><cite>Niklas Wiklander</cite></blockquote>
+                      </div>
+                      <div class="col col-1of2">
+                        <ul class="alt">
+                          <li><a href="/about/company-overview">Company overview</a></li>
+                          <li><a href="/about/our-team">Our team</a></li>
+                          <li><a href="/about/board-and-investors">Board and investors</a></li>
+                          <li><a href="/about/careers">Careers</a></li>
+                          <li><a href="/about/press">Press</a></li>
+                          <li><a href="/about/contact-us">Contact us</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
